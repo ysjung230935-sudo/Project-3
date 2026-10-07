@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA Sign-Up</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="theme-tech">
+    <main class="page-shell">
+        <header class="page-header">
+            <h1 id="page-title">NASA Sign-Up</h1>
+            <p class="info-text">Please complete all required fields.</p>
+            <p class="info-text">Double check your email before submitting.</p>
+        </header>
+
+        <div class="main-layout">
+            <form action="#" method="post" class="card form-card">
+                <h2>NASA Sign-Up</h2>
+
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input id="fullName" name="fullName" type="text" placeholder="e.g., Jane Doe" />
+                </div>
+
+                <div class="form-group">
+                    <label for="userEmail">Email Address:</label>
+                    <input id="userEmail" name="userEmail" type="email" placeholder="e.g., jane@example.com" />
+                </div>
+
+                <div class="form-group">
+                    <label for="birthDate">Date of Birth:</label>
+                    <input id="birthDate" name="birthDate" type="date" />
+                </div>
+
+                <div class="form-group">
+                    <label for="userNotes">Why are you interested to join NASA?</label>
+                    <textarea id="userNotes" name="userNotes" rows="4" placeholder="Enter your notes..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <span class="field-title">Ticket Tier for NASA:</span>
+                    <div class="option-group">
+                        <label for="tierPass">
+                            <input id="tierPass" name="ticket" type="radio" checked />
+                            Standard Pass 200,000 USD
+                        </label>
+                        <label for="tierVIP">
+                            <input id="tierVIP" name="ticket" type="radio" />
+                            VIP Pass 800,000 USD
+                        </label>
+                        <label for="tierSVIP">
+                            <input id="tierSVIP" name="ticket" type="radio" />
+                            S-VIP Pass 15,000,000 USD
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <span class="field-title">Are you sure you want to join NASA?</span>
+                    <div class="option-group">
+                        <label for="veg">
+                            <input id="veg" name="attendance" type="checkbox" />
+                            Yes, I want to join NASA and attend the event.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="tshirt">Astronaut shirt size:</label>
+                    <select id="tshirt" name="tshirt">
+                        <option value="" disabled selected>Select your size</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </div>
+
+                <button class="submit-btn" type="submit">Submit Registration</button>
+            </form>
+
+            <aside class="card profile-card">
+                <div class="profile-header">
+                    <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar" />
+                    <h3>Alex Jung</h3>
+                    <p class="status">Status: NASA President</p>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3" class="table-title">Event Schedule</th>
+                        </tr>
+                        <tr class="table-head">
+                            <th>Time</th>
+                            <th>Session</th>
+                            <th>Room</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8:00AM</td>
+                            <td>International Space Station Overview</td>
+                            <td>Main Hall 1F NASA</td>
+                        </tr>
+                        <tr>
+                            <td>10:00AM</td>
+                            <td>Testing and Debugging Techniques</td>
+                            <td>3F NASA Testing Room</td>
+                        </tr>
+                        <tr>
+                            <td>1:00 PM</td>
+                            <td>Lunch</td>
+                            <td>Cafeteria B1 NASA</td>
+                        </tr>
+                        <tr>
+                            <td>3:45 PM</td>
+                            <td>Ready for Launch the Rocket</td>
+                            <td>Outside NASA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+        </div>
+    </main>
+</body>
+
+</html>

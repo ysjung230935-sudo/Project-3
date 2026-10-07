@@ -1,0 +1,259 @@
+:root {
+    --panel: rgba(10, 10, 10, 0.9);
+    --panel-alt: rgba(7, 164, 232, 0.92);
+    --line: rgba(248, 45, 13, 0.35);
+    --text: #edf6ff;
+    --muted: #b8d1e8;
+    --button: linear-gradient(180deg, #3ec1ff, #1c9ae5);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.theme-tech {
+    --line: rgba(46, 189, 248, 0.4);
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #051421, #091d2c 35%, #030d18 100%);
+    color: var(--text);
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+.page-shell {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 24px 18px 40px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+    font-weight: 800;
+    color: #fbfcfd;
+}
+
+.page-header p {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+.main-layout {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.form-card {
+    width: 100%;
+    max-width: 520px;
+    padding: 28px 24px 24px;
+}
+
+.form-card h2 {
+    margin: 0 0 22px;
+    font-size: clamp(2rem, 2.4vw, 2.7rem);
+    color: var(--text);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label,
+.field-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    background: rgba(8, 20, 28, 0.75);
+    border: 1px solid rgba(121, 165, 214, 0.35);
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: var(--text);
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #8da3bb;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #66d9ff;
+    box-shadow: 0 0 0 3px rgba(102, 217, 255, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.option-group {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+
+.option-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--muted);
+}
+
+.option-group input {
+    width: auto;
+    margin: 0;
+}
+
+.submit-btn {
+    border: none;
+    border-radius: 10px;
+    background: var(--button);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 18px rgba(36, 144, 225, 0.28);
+}
+
+.submit-btn {
+    margin-top: 6px;
+    padding: 16px 18px;
+    font-size: 1.1rem;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 440px;
+    padding: 22px 18px 18px;
+    text-align: center;
+    background: var(--panel-alt);
+}
+
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 94px;
+    height: 94px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    object-fit: cover;
+}
+
+.profile-card h3 {
+    margin: 10px 0 12px;
+    font-size: 2rem;
+}
+
+.status {
+    margin: 0 0 18px;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(11, 24, 34, 0.8);
+}
+
+.table-title {
+    background: rgba(26, 46, 62, 0.9);
+    color: #ebf5ff;
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--line);
+}
+
+.table-head th {
+    background: rgba(26, 46, 62, 0.9);
+    color: #ebf5ff;
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--line);
+}
+
+table td {
+    color: var(--muted);
+    font-size: 0.9rem;
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--line);
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(20, 33, 45, 0.7);
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 760px) {
+    .main-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-card,
+    .profile-card {
+        max-width: 100%;
+    }
+}
